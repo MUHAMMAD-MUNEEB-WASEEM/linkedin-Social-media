@@ -6,8 +6,10 @@ npx create-react-app linkedin –template redux
 
 ## Dependencies:
 
-yarn add @material-ui/core
-yarn add @material-ui/icons
+1. yarn add @material-ui/core
+2. yarn add @material-ui/icons
+3. yarn add firebase@^8.10.0
+4. yarn add react-flip-move  (to animate post)
 
 ## Division
 
@@ -28,4 +30,4 @@ Firebase firestore is used as database in this build
 
 ## Hosting and Authentication
 
-Firebase hosting and authentication is considered for this build
+Firebase hosting and authentication is considered for this build. Use email and password for authentication
