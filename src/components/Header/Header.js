@@ -11,11 +11,12 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../redux/userSlice';
 import { auth } from '../../firebase';
 
 function Header() {
+
     const dispatch = useDispatch();
 
     const logoutToApp = ()=>{
@@ -42,8 +43,8 @@ function Header() {
                 <HeaderOptions Icon={ChatIcon} title="Messaging" />
                 <HeaderOptions Icon={NotificationsIcon} title="Notification" />
                 <HeaderOptions 
+                    avatar={true}
                     onClick = {logoutToApp}
-                    avatar="https://whatsapp-mern-fullstack.web.app/static/media/my%20image3jpg.f2592b34.jpg" 
                     title="me"/>
             </div>
         </div>
