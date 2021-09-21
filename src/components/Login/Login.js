@@ -29,7 +29,7 @@ function Login() {
                         email: userAuth.user.email,
                         uid: userAuth.user.uid,
                         displayName: name,
-                        photourl: profilePic
+                        photourl: profilePic 
                     }))
                 })
             })
@@ -39,8 +39,21 @@ function Login() {
 
     }
 
+    //values taken from redux stored from signup
     const loginToApp = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+
+        auth.signInWithEmailAndPassword(email, password)
+            .then(userAuth => {
+                dispatch(login({
+                    email: userAuth.user.email,
+                    uid: userAuth.user.uid,
+                    displayName: userAuth.user.displayName,
+                    photourl: userAuth.user.photoURL
+                }))
+            }).catch(error=>{
+                alert(error)
+            })
 
     }
     return (
