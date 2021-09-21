@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## App Link:
+
+https://linkedin-311e5.web.app
+
 ## Creating Project:
 
 npx create-react-app linkedin –template redux
