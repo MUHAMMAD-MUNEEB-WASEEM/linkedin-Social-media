@@ -4,6 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://linkedin-311e5.web.app
 
+## Tools which are used:
+
+1. Reactjs
+2. Redux
+3. Material UI
+4. flexbox
+5. Firebase
+
 ## Creating Project:
 
 npx create-react-app linkedin –template redux
@@ -27,6 +35,19 @@ App Body is further divided into 3 sub parts
 1. Sidebar
 2. Feed
 3. Widgets
+
+## Material UI
+
+Material-UI is a library that allows us to use different components to create an elegant user interface in our applications.
+
+## Redux
+
+Redux is a predictable state container for JavaScript apps. It is like a central store in which you can save information and can populate it anywhere in the app
+I have used redux to store and populate information of user in the app
+
+## Firebase
+
+Firebase is a platform developed by Google for creating mobile and web applications. It offers variety of services including hosting, database, authentication etc
 
 ## Database
 
